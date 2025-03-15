@@ -6,10 +6,11 @@
 </head>
 <body>
   {% for post in blogs %}
-    {% if post["id"] == 2 %}
+    {% if post["id"] == num %}
     <h1>{{ post["title"] }}</h1>
     <h2>{{ post["subtitle"] }}</h2>
     {% endif %}
   {% endfor %}
+<a href="{{ url_for('home') }}">Home</a>
 </body>
 </html>
